@@ -2,6 +2,9 @@
 const plugin = require("tailwindcss/plugin");
 const { blackA, mauve, violet, indigo, purple } = require("@radix-ui/colors");
 
+
+
+
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,6 +13,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        "playfair ": ["Playfair Display", 'sans-serif'],
+      },
       colors: {
         ...blackA,
         ...mauve,

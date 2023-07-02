@@ -7,7 +7,7 @@ import logo from 'public/logo.svg'
 
 const Navbar = () => {
   return (
-    <header className=" bg-zinc-400">
+    <header className=" bg-zinc-400 z-0">
       <nav className="flex justify-between items-center w-full bg-zinc-200 text-black px-10 py-8 ">
         <div>
           <div className="flex items-center justify-between">
@@ -22,7 +22,7 @@ const Navbar = () => {
             Services
           </Link>
           <Link href="/services" className="hover:text-red-500">
-            About
+            About us
           </Link>
           <Link href="/services" className="hover:text-red-500">
             Pricing
@@ -33,7 +33,7 @@ const Navbar = () => {
           <Link href="/services" className="hover:text-red-500">
             Contact
           </Link>
-          <button className="bg-zinc-900 text-zinc-200 px-4 py-2 rounded-md hover:bg-zinc-700 hover:text-red-500">
+          <button className="bg-zinc-900 text-zinc-200 px-4 py-2 rounded-full hover:bg-zinc-700 hover:text-red-500">
             <Link href="/sign-up" className="">
               Get Started
             </Link>
