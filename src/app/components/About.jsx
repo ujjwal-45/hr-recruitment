@@ -35,7 +35,7 @@ const About = () => {
 
         <motion.div
            variants={slideIn("right", "tween", 0.1, 1)}
-          whileHover={{ scale: 1.1 }}
+          
           className="relative w-full pb-20 hero-gradient rounded-tl-[140px]"
         >
           <div
