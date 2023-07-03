@@ -1,4 +1,4 @@
-import Link from 'next/link'
+
 import React from 'react'
 import { Merriweather, PT_Serif } from "next/font/google";
 
@@ -12,7 +12,7 @@ const page = () => {
   return (
     <body className="antialiased bg-gray-200">
       <div className="flex w-full min-h-screen justify-center items-center">
-        <div className="flex flex-row space-y-6 space-x-2 bg-slate-400 w-full max-w-5xl p-12 rounded-xl shadow-lg space-y-6">
+        <div className="flex flex-row space-y-6 space-x-2 bg-slate-400 w-full max-w-5xl p-12 rounded-xl shadow-lg">
           <div className="flex flex-col space-y-8 justify-between">
             <div>
               <h1
