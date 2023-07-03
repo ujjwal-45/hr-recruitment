@@ -2,12 +2,15 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { slideIn, staggerContainer, textVariant } from '@/app/utils/motion'
-import styles from '@/styles'
-import Image from 'next/image'
+import {  Merriweather } from 'next/font/google'
+
+
+
+const merrie = Merriweather({weight:['400'] ,subsets: ['latin']})
 
 const About = () => {
   return (
-    <section className=" py-12 bg-zinc-300 pl-6 ">
+    <section className=" py-12 bg-slate-200 pl-6 ">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -18,24 +21,25 @@ const About = () => {
         <div className="flex justify-start items-start flex-col relative z-10">
           <motion.h1
             variants={textVariant(1.1)}
-            className="text-[64px] text-red-500 font-bold ml-11"
+            className={`${merrie.className} text-red-600 font-bold ml-9 text-[64px]` }
           >
             Unlock your hiring Potential
           </motion.h1>
 
           <motion.div
             variants={textVariant(1.2)}
-            className="flex flex-row ml-8 justify-center items-start"
+            className="flex flex-row ml-8 justify-center items-center"
           >
-            <h1 className="text-[64px] flex-col text-zinc-700 font-semibold">
-              Streamline Recruitment for Managers and HR Professionals!
+            <h1 className={`${merrie.className} text-[54px] flex-col text-zinc-700 font-semibold mb-10`}>
+              Streamline Recruitment for Managers and
+              HR Professionals!
             </h1>
+            
           </motion.div>
         </div>
 
         <motion.div
-           variants={slideIn("right", "tween", 0.1, 1)}
-          
+          variants={slideIn("right", "tween", 0.1, 1)}
           className="relative w-full pb-20 hero-gradient rounded-tl-[140px]"
         >
           <div

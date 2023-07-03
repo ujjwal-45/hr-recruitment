@@ -1,4 +1,9 @@
+'use client'
 import React from 'react'
+import { Merriweather, PT_Serif } from "next/font/google";
+
+const merrie = Merriweather({ weight: ["400"], subsets: ["latin"] });
+const pt = PT_Serif({ weight: ["400"], subsets: ["latin"] });
 
 const Footer = () => {
   return (
@@ -7,14 +12,18 @@ const Footer = () => {
         {/*First Column */}
         <div className="basis-2/3 mt-4 ml-6 mr-2">
           <img src="/logo.svg" alt="logo" className="h-12 w-12" />
-          <h4 className="flex flex-col text-normal ">
+          <h4 className={`${merrie.className} flex flex-col text-normal `}>
             Unlock Your Hiring Potential: Streamline Recruitment for Managers
             and HR Professionals!
           </h4>
           <hr className="border-1" />
           <div className="flex flex-col justify-between mt-3">
-            <h4 className="text-2xl text-red-600">Join our newsletter</h4>
-            <h4 className="text-2xl text-zinc-600 px-1">to stay upto date</h4>
+            <h4 className={`${pt.className} text-2xl text-red-600`}>
+              Join our newsletter
+            </h4>
+            <h4 className={`${pt.className} text-2xl text-zinc-600 px-1`}>
+              to stay upto date
+            </h4>
             <div className="flex flex-col items-start">
               <input
                 className="mt-3 py-2 px-3 rounded-lg border-2"
@@ -57,6 +66,23 @@ const Footer = () => {
             <h5 className="hover:text-red-500">Pricing</h5>
             <h5 className="hover:text-red-500">Customer</h5>
             <h5 className="hover:text-red-500">Contact</h5>
+            <div className="flex flex-row justify-between gap-3 mt-4">
+              <img
+                src="/linkedin.svg"
+                alt="linkedin"
+                className="h-8 w-8 bg-black px-1"
+              />
+              <img
+                src="/twitter.svg"
+                alt="linkedin"
+                className="h-8 w-8 bg-black  px-1"
+              />
+              <img
+                src="/instagram.svg"
+                alt="linkedin"
+                className="h-8 w-8 bg-black px-1"
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import React from 'react'
 
 const Customers = () => {
   return (
-    <div className="bg-zinc-800 rounded-lg flex justify-between gap-6 text-zinc-100 px-5 py-10">
+    <div className="bg-slate-500 rounded-lg flex justify-between gap-6 text-zinc-100 px-5 py-10">
       <h1 className="ml-10 text-2xl text-zinc-300">Trusted By</h1>
       <img
         src="/ibm.png"
